@@ -168,15 +168,10 @@ class Asvuser_model extends CI_Model
 	}
 	
 	public function get_user_by_idandroid($iduseridmobile){
-		$cryptid = substr($iduseridmobile, 5, -3);
-		$graindesel = "gras";
-		$time = round(time()/1000);
-		$time2 = round(time()/1000) - 1;
 		$requete = 
 			"SELECT *
 			FROM ".$this->table."
-			WHERE MD5(CONCAT(iduserasv, 'gras', '".$time."')) = '".$cryptid."'
-			OR MD5(CONCAT(iduserasv, 'gras', '".$time2."')) = '".$cryptid."'";
+			WHERE iduserasv = '".$iduseridmobile."'";
 		return $this->db->query($requete)
 			->result();
 	}

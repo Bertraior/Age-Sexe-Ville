@@ -49,12 +49,38 @@ code {
 
 <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
+<h3>User</h3>
 <ul>
-	<li><a href="<?php echo site_url('api/example/users');?>">Users</a> - defaulting to XML</li>
-	<li><a href="<?php echo site_url('api/example/users/format/csv');?>">Users</a> - get it in CSV</li>
-	<li><a href="<?php echo site_url('api/example/user/id/1');?>">User #1</a> - defaulting to XML</li>
-	<li><a href="<?php echo site_url('api/example/user/id/1/format/json');?>">User #1</a> - get it in JSON</li>
-	<li><a id="ajax" href="<?php echo site_url('api/example/users/format/json');?>">Users</a> - get it in JSON (AJAX request)</li>
+	<li><a href="<?php echo site_url('api/user/connect');?>">Connection</a> - Post (username, password)</li>
+	<li><a href="<?php echo site_url('api/user/inscription');?>">Inscription</a> - Post (pseudo, username, password, redid, coco) </li>
+	<li><a href="<?php echo site_url('api/user/modify_pseudo/iduseridmobile/1');?>">Modifier pseudo</a>  - Get (iduseridmobile) - Post (pseudo) </li>
+	<li><a href="<?php echo site_url('api/user/majgcm/iduseridmobile/1');?>">Mise à jour Google Cloud Messaging Id</a> - Get (iduseridmobile) - Post (gcm) </li>
+	<li><a href="<?php echo site_url('api/user/modifyiosdeviceid/iduseridmobile/1');?>">Mise à jour IOS Cloud Messaging Id</a> - Get (iduseridmobile) - Post (iosdeviceid) </li>
+	<li><a href="<?php echo site_url('api/user/signaler/iduseridmobile/1');?>">Signaler un commentaire</a> - Get (iduseridmobile) - Post (idcommenterasv) </li>
+	<li><a href="<?php echo site_url('api/user/iospush');?>">Test d'envoie de notification sur Iphone vers tel à bertrand</a> </li>
+</ul>
+
+<h3>Chat</h3>
+<ul>
+	<li><a href="<?php echo site_url('api/chat/create/iduseridmobile/1');?>">Créer un forum</a> - Get (iduseridmobile) - Post (chat)</li>
+	<li><a href="<?php echo site_url('api/chat/chats/iduseridmobile/1');?>">Liste des forums</a> - Get (iduseridmobile) </li>
+</ul>
+
+<h3>Commentforum</h3>
+<ul>
+	<li><a href="<?php echo site_url('api/commentforum/check/iduseridmobile/1/idforum/6/idmessage/1');?>">Check s'il y'a un nouveau message sur le forum (pour refresh le html)</a> - Get (iduseridmobile, idforum, idmessage)</li>
+	<li><a href="<?php echo site_url('api/commentforum/commentsforum/iduseridmobile/1/idforum/6');?>">Liste des commentaire dans le forum</a> - Get (iduseridmobile, idforum) </li>
+	<li><a href="<?php echo site_url('api/commentforum/commente/iduseridmobile/1/idforum/6');?>">Commenter dans le forum</a> - Get (iduseridmobile, idforum) - Post (message, datemobile)</li>
+	<li><a href="<?php echo site_url('api/commentforum/thecommentforum/iduseridmobile/1/idmessage/14');?>">le message du forum</a> - Get (iduseridmobile, idmessage)</li>
+</ul>
+
+<h3>Mymessage</h3>
+<ul>
+	<li><a href="<?php echo site_url('api/mymessage/message/iduseridmobile/20');?>">Liste des messages privés</a> - Get (iduseridmobile)</li>
+	<li><a href="<?php echo site_url('api/mymessage/messagewith/iduseridmobile/20/iddestinataire/181');?>">Liste des messages privés avec une personne</a> - Get (iduseridmobile, iddestinataire) </li>
+	<li><a href="<?php echo site_url('api/mymessage/loadnumbermessage/iduseridmobile/1');?>">Check le nombre de nouveau messages privés</a> - Get (iduseridmobile)</li>
+	<li><a href="<?php echo site_url('api/mymessage/updatenumbermessage/iduseridmobile/1');?>">Mise à jour du nombre de nouveau messages privés</a> - Get (iduseridmobile)</li>
+	<li><a href="<?php echo site_url('api/mymessage/envoiemessage/iduseridmobile/1/iddestinataire/14');?>">Envoie d'un message privée</a> - Get (iduseridmobile, iddestinataire) - POST (messagetosend, datemessagemobile)</li>
 </ul>
 
 <p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>

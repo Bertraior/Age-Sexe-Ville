@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.asv"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 4
+        versionName "4.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/gcm.jar')
+    compile files('libs/gcm-server.jar')
+    compile files('libs/gcm-server-src.jar')
+}
