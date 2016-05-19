@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">A.S.V.</string>
+    <string name="action_settings">Paramètre</string>
+    <string name="refresh">Refresh</string>
+    <string name="create_forum">+ Chat</string>
+    <string name="title_activity_login">Log In</string>
+
+    <string name="title_activity_signgin">Sign</string>
+    <string name="sign">GO !</string>
+    <string name="mail_example">contact@socialevent.fr</string>
+    <string name="password">Password</string>
+    <string name="pseudo">Swag pseudo</string>
+    <string name="already">Already have an account ?</string>
+
+    <string name="log">Login</string>
+    <string name="back">Retour</string>
+
+    <string name="chat_name">Nom du Chat</string>
+    <string name="validate">Valider</string>
+    <string name="modification_pseudo">Modification pseudo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_chat">Creer un Chat</string>
+    <string name="title_activity_setting">Paramètre</string>
+
+    <string name="chargement">Now Loading</string>
+    <string name="interneterror">Error Internet</string>
+    <string name="interneterrormessage">Assurez vous d\'avoir internet</string>
+
+    <string name="forget_password">I forget my password</string>
+    <string name="title_activity_event">Chat</string>
+    <string name="title_activity_ask_mail">Envoyer message</string>
+
+    <string name="forum_full">Chat complet</string>
+    <string name="forum_full_description">Veuillez patienter, il y\'a trop de gens dans le chat</string>
+
+    <string name="me">Me :</string>
+    <string name="sendmessage">Envoyer un message</string>
+    <string name="whatyourasv">Hi ! whats your A.S.V ? (Age/Sex/City)</string>
+
+    <string name="requestdo">Your request of asking friend has done</string>
+    <string name="accepterbutton">Accept like friend</string>
+    <string name="title_activity_maj_version">Mise à jour</string>
+
+    <string name="messagerie">Messagerie</string>
+    <string name="nomessage">Pas de message pour le moment</string>
+
+</resources>

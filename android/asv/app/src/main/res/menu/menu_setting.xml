@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.asv.SettingActivity">
+    <item android:id="@+id/validate" android:title="@string/validate" android:icon="@drawable/arrowwhite"
+        android:showAsAction="always" />
+</menu>
